@@ -13,6 +13,16 @@
   }
 }
 
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  .hero {
+    background-size: auto;
+    height: 50vh; /* Reduce the height to 50% of the viewport */
+  }
+}
+
+
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
