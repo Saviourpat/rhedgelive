@@ -118,39 +118,92 @@
         <a href="" class="glightbox pulsating-play-btn"></a>
       </div>
 
-      <!-- About Content -->
-      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-        <h3>About Us</h3>
-        <p>At Rhedge Studio, we believe in the power of design to transform ideas into memorable experiences. Our team of creative minds is dedicated to bringing your vision to life with innovative solutions that speak to both your audience and your brand.</p>
-        
-        <ul>
-          <li>
-            <i class="bi bi-brush"></i>
-            <div>
-              <h5>Creative Branding & Logo Design</h5>
-              <p>We craft unique brand identities that stand out and leave a lasting impression, helping businesses grow with purpose and style.</p>
-            </div>
-          </li>
-          <li>
-            <i class="bi bi-code-slash"></i>
-            <div>
-              <h5>Web Development & Management</h5>
-              <p>From custom websites to seamless management solutions, we build user-friendly platforms that drive results and keep your digital presence ahead of the curve.</p>
-            </div>
-          </li>
-          <li>
-            <i class="bi bi-diagram-3"></i>
-            <div>
-              <h5>UI/UX Design & Digital Experiences</h5>
-              <p>Our user-centric designs prioritize functionality and aesthetics, ensuring an intuitive experience that resonates with your audience.</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+     Here's an updated version of the HTML, CSS, and JavaScript code that only shows the "See More" link on mobile screens:
 
-    </div>
+HTML
+
+<div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+  <h3>About Us</h3>
+  <p>At Rhedge Studio, we believe in the power of design to transform ideas into memorable experiences.</p>
+  <p>Our team of creative minds is dedicated to bringing your vision to life with innovative solutions that speak to both your audience and your brand.</p>
+  <ul>
+    <li>
+      <i class="bi bi-brush"></i>
+      <div>
+        <h5>Creative Branding & Logo Design</h5>
+        <p>We craft unique brand identities that stand out and leave a lasting impression, helping businesses grow with purpose and style.</p>
+      </div>
+    </li>
+    <li>
+      <i class="bi bi-code-slash"></i>
+      <div>
+        <h5>Web Development & Management</h5>
+        <p>From custom websites to seamless management solutions, we build user-friendly platforms that drive results and keep your digital presence ahead of the curve.</p>
+      </div>
+    </li>
+    <li class="d-none d-md-block">
+      <i class="bi bi-diagram-3"></i>
+      <div>
+        <h5>UI/UX Design & Digital Experiences</h5>
+        <p>Our user-centric designs prioritize functionality and aesthetics, ensuring an intuitive experience that resonates with your audience.</p>
+      </div>
+    </li>
+  </ul>
+  <div class="show-more d-md-none">
+    <a href="#" class="see-more">See More</a>
   </div>
-</section><!-- /About Section -->
+  <div class="more-content d-md-none" style="display: none;">
+    <ul>
+      <li>
+        <i class="bi bi-diagram-3"></i>
+        <div>
+          <h5>UI/UX Design & Digital Experiences</h5>
+          <p>Our user-centric designs prioritize functionality and aesthetics, ensuring an intuitive experience that resonates with your audience.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+      <style>
+
+.show-more {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.see-more {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.see-more:hover {
+  background-color: #0056b3;
+}
+
+.more-content {
+  margin-top: 20px;
+}
+        </style>
+
+<script>
+  const seeMoreLink = document.querySelector('.see-more');
+  const moreContent = document.querySelector('.more-content');
+
+  seeMoreLink.addEventListener('click', () => {
+    if (moreContent.style.display === 'none') {
+      moreContent.style.display = 'block';
+      seeMoreLink.textContent = 'See Less';
+    } else {
+      moreContent.style.display = 'none';
+      seeMoreLink.textContent = 'See More';
+    }
+  });
+</script>
+
 
 
     <!-- Stats Section -->
