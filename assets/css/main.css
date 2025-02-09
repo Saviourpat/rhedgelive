@@ -7,6 +7,11 @@
   --nav-font: "Bricolage Grotesque", sans-serif;  /* Font for navigation */
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
