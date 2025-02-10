@@ -103,6 +103,31 @@
   </div>
 
 </section>
+    <style>
+      /* Default hero styles */
+.hero img {
+    width: 100%;
+    height: 100vh;  /* Default height for landscape */
+    object-fit: cover;
+}
+
+/* Portrait Mode: When the height is greater than the width (max-width: 767px) */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .hero img {
+        height: 50vh;  /* Reduce height to 50vh in portrait mode */
+    }
+}
+
+/* Optional: Adjust the overlay to make sure it stays on top */
+.hero > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 1, 1, 0.3); /* Adjust opacity as needed */
+}
+</style>
 <!-- End Hero Section -->
 
 
