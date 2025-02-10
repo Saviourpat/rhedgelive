@@ -106,8 +106,7 @@
 <!-- End Hero Section -->
 
 
-
-  <!-- About Section -->
+<!-- About Section -->
 <section id="about" class="about section">
   <div class="container">
     <div class="row gy-4">
@@ -118,92 +117,120 @@
         <a href="" class="glightbox pulsating-play-btn"></a>
       </div>
 
-<div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
-  <h3>About Us</h3>
-  <p>At Rhedge Studios, we believe in the power of design to transform ideas into memorable experiences.</p>
-  <p>Our team of creative minds is dedicated to bringing your vision to life with innovative solutions that speak to both your audience and your brand.</p>
-  <div class="show-more d-md-none">
-    <a href="#" class="see-more">See More</a>
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+        <h3>About Us</h3>
+        <p>At Rhedge Studios, we believe in the power of design to transform ideas into memorable experiences.</p>
+        <p>Our team of creative minds is dedicated to bringing your vision to life with innovative solutions that speak to both your audience and your brand.</p>
+        <div class="show-more d-md-none">
+          <a href="#" class="see-more">See More</a>
+        </div>
+        <div class="more-content d-md-none" style="display: none;">
+          <ul>
+            <li>
+              <i class="bi bi-brush"></i>
+              <div>
+                <h5>Creative Branding & Logo Design</h5>
+                <p>We craft unique brand identities that stand out and leave a lasting impression, helping businesses grow with purpose and style.</p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-code-slash"></i>
+              <div>
+                <h5>Web Development & Management</h5>
+                <p>From custom websites to seamless management solutions, we build user-friendly platforms that drive results and keep your digital presence ahead of the curve.</p>
+              </div>
+            </li>
+            <li>
+              <i class="bi bi-diagram-3"></i>
+              <div>
+                <h5>UI/UX Design & Digital Experiences</h5>
+                <p>Our user-centric designs prioritize functionality and aesthetics, ensuring an intuitive experience that resonates with your audience.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <ul class="d-md-block">
+          <li>
+            <i class="bi bi-brush"></i>
+            <div>
+              <h5>Creative Branding & Logo Design</h5>
+              <p>We craft unique brand identities that stand out and leave a lasting impression, helping businesses grow with purpose and style.</p>
+            </div>
+          </li>
+          <li>
+            <i class="bi bi-code-slash"></i>
+            <div>
+              <h5>Web Development & Management</h5>
+              <p>From custom websites to seamless management solutions, we build user-friendly platforms that drive results and keep your digital presence ahead of the curve.</p>
+            </div>
+          </li>
+          <li>
+            <i class="bi bi-diagram-3"></i>
+            <div>
+              <h5>UI/UX Design & Digital Experiences</h5>
+              <p>Our user-centric designs prioritize functionality and aesthetics, ensuring an intuitive experience that resonates with your audience.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="more-content d-md-none" style="display: none;">
-    <ul>
-      <li>
-        <i class="bi bi-brush"></i>
-        <div>
-          <h5>Creative Branding & Logo Design</h5>
-          <p>We craft unique brand identities that stand out and leave a lasting impression, helping businesses grow with purpose and style.</p>
-        </div>
-      </li>
-      <li>
-        <i class="bi bi-code-slash"></i>
-        <div>
-          <h5>Web Development & Management</h5>
-          <p>From custom websites to seamless management solutions, we build user-friendly platforms that drive results and keep your digital presence ahead of the curve.</p>
-        </div>
-      </li>
-      <li>
-        <i class="bi bi-diagram-3"></i>
-        <div>
-          <h5>UI/UX Design & Digital Experiences</h5>
-          <p>Our user-centric designs prioritize functionality and aesthetics, ensuring an intuitive experience that resonates with your audience.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <ul class="d-md-block">
-    <li>
-      <i class="bi bi-brush"></i>
-      <div>
-        <h5>Creative Branding & Logo Design</h5>
-        <p>We craft unique brand identities that stand out and leave a lasting impression, helping businesses grow with purpose and style.</p>
-      </div>
-    </li>
-    <li>
-      <i class="bi bi-code-slash"></i>
-      <div>
-        <h5>Web Development & Management</h5>
-        <p>From custom websites to seamless management solutions, we build user-friendly platforms that drive results and keep your digital presence ahead of the curve.</p>
-      </div>
-    </li>
-    <li>
-      <i class="bi bi-diagram-3"></i>
-      <div>
-        <h5>UI/UX Design & Digital Experiences</h5>
-        <p>Our user-centric designs prioritize functionality and aesthetics, ensuring an intuitive experience that resonates with your audience.</p>
-      </div>
-    </li>
-  </ul>
-</div>
+</section>
 
-      <style>
-/* Initially hide more content on smaller screens */
-.more-content {
-  display: none;
-}
+<style>
+  /* Ensure proper alignment */
+  .about .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-/* Show the "See More" button only on smaller screens */
-@media (max-width: 767px) {
+  .col-lg-6 {
+    flex: 1;
+  }
+
+  /* Additional style for better display */
+  .content {
+    padding: 20px;
+  }
+
+  /* Show more content visibility on small screens only */
   .show-more {
-    display: block;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .d-md-block {
-    display: none;
-  }
-}
-
-/* Ensure the content is fully displayed on larger screens */
-@media (min-width: 768px) {
-  .show-more {
-    display: none;
+  .see-more {
+    background-color: #330066;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
-  .d-md-block {
-    display: block;
+  .see-more:hover {
+    background-color: #f61362;
   }
-}
 
-        </style>
+  /* Hide the "See More" and "more content" on larger screens */
+  @media (min-width: 768px) {
+    .show-more, .more-content {
+      display: none;
+    }
+    .d-md-block {
+      display: block;
+    }
+  }
+
+  /* Responsive behavior for smaller screens */
+  @media (max-width: 767px) {
+    .col-lg-6 {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
 
 <script>
 const seeMoreLink = document.querySelector('.see-more');
