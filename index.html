@@ -194,29 +194,27 @@
 </section>
 
 <style>
-  /* Ensure proper alignment */
-  .about .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .col-lg-6 {
-    flex: 1;
-  }
-
-  /* Additional style for better display */
-  .content {
-    padding: 20px;
-  }
-
-/* Initially hide more content on smaller screens */
-.more-content {
-  display: none;
+/* Ensure proper alignment */
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Show the "See More" button only on smaller screens */
+/* Adjust the order of elements on mobile */
 @media (max-width: 767px) {
+  .col-lg-6 {
+    margin-bottom: 20px; /* Add space between columns */
+  }
+
+  .col-lg-6.position-relative {
+    order: 2; /* Move the video div below the content div */
+  }
+
+  .col-lg-6.content {
+    order: 1; /* Keep the content div on top */
+  }
+
   .show-more {
     display: block;
   }
@@ -237,12 +235,6 @@
   }
 }
 
-  /* Responsive behavior for smaller screens */
-  @media (max-width: 767px) {
-    .col-lg-6 {
-      margin-bottom: 20px;
-    }
-  }
 </style>
 
 
