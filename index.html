@@ -176,34 +176,41 @@
 </div>
 
       <style>
-
-.show-more {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.see-more {
-  background-color: #330066;
-  color: #ffffff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.see-more:hover {
-  background-color: #f61362;
-}
-
+/* Initially hide more content on smaller screens */
 .more-content {
-  margin-top: 20px;
+  display: none;
 }
+
+/* Show the "See More" button only on smaller screens */
+@media (max-width: 767px) {
+  .show-more {
+    display: block;
+  }
+
+  .d-md-block {
+    display: none;
+  }
+}
+
+/* Ensure the content is fully displayed on larger screens */
+@media (min-width: 768px) {
+  .show-more {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+}
+
         </style>
 
 <script>
-  const seeMoreLink = document.querySelector('.see-more');
-  const moreContent = document.querySelector('.more-content');
+const seeMoreLink = document.querySelector('.see-more');
+const moreContent = document.querySelector('.more-content');
 
+// Make sure the script runs only on small screen sizes
+if (window.innerWidth <= 767) {
   seeMoreLink.addEventListener('click', () => {
     if (moreContent.style.display === 'none') {
       moreContent.style.display = 'block';
@@ -213,6 +220,8 @@
       seeMoreLink.textContent = 'See More';
     }
   });
+}
+
 </script>
 
 
