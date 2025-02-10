@@ -194,34 +194,32 @@
     padding: 20px;
   }
 
-  /* Show more content visibility on small screens only */
+/* Initially hide more content on smaller screens */
+.more-content {
+  display: none;
+}
+
+/* Show the "See More" button only on smaller screens */
+@media (max-width: 767px) {
   .show-more {
-    text-align: center;
-    margin-bottom: 20px;
+    display: block;
   }
 
-  .see-more {
-    background-color: #330066;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .d-md-block {
+    display: none;
+  }
+}
+
+/* Ensure the content is fully displayed on larger screens */
+@media (min-width: 768px) {
+  .show-more {
+    display: none;
   }
 
-  .see-more:hover {
-    background-color: #f61362;
+  .d-md-block {
+    display: block;
   }
-
-  /* Hide the "See More" and "more content" on larger screens */
-  @media (min-width: 768px) {
-    .show-more, .more-content {
-      display: none;
-    }
-    .d-md-block {
-      display: block;
-    }
-  }
+}
 
   /* Responsive behavior for smaller screens */
   @media (max-width: 767px) {
